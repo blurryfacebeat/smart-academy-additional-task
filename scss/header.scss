@@ -1,0 +1,104 @@
+.page-header {
+    background-color: $purple;
+    box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.3);
+
+    &__wrapper {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+        max-width: 124rem;
+
+        .page-header__logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-decoration: none;
+            color: #fff;
+            
+            transition: opacity 0.2s linear;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            svg {
+                width: 5rem;
+                height: 5rem;
+
+                path {
+                    fill: #fff;
+                }
+            }
+
+            span {
+                font-size: 2.4rem;
+                font-weight: 400;
+            }
+        }
+
+        .page-header__burger-menu {
+            display: none;
+            position: relative;
+            
+            width: 2rem;
+            height: 0.2rem;
+
+            background-color: #fff;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 2rem;
+                height: 0.2rem;
+                left: 0;
+                top: 0.7rem;
+
+                background-color: #fff;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 2rem;
+                height: 0.2rem;
+                left: 0;
+                top: -0.7rem;
+
+                background-color: #fff;
+            }
+        }
+
+        .page-header__navigation {
+            display: flex;
+
+            list-style: none;
+
+            .navigation__item {
+                margin-right: 2rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    color: #fff;
+                    text-decoration: none;
+
+                    transition: opacity 0.2s linear;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}
