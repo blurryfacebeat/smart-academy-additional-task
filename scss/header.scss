@@ -1,6 +1,5 @@
 .page-header {
-    background-color: $purple;
-    box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.3);
+    background-color: #fff;
 
     &__wrapper {
         padding-top: 2rem;
@@ -18,7 +17,7 @@
             justify-content: center;
 
             text-decoration: none;
-            color: #fff;
+            color: $blue;
             
             transition: opacity 0.2s linear;
 
@@ -31,7 +30,7 @@
                 height: 5rem;
 
                 path {
-                    fill: #fff;
+                    fill: $blue;
                 }
             }
 
@@ -48,7 +47,7 @@
             width: 2rem;
             height: 0.2rem;
 
-            background-color: #fff;
+            background-color: $blue;
             cursor: pointer;
 
             &::before {
@@ -59,7 +58,7 @@
                 left: 0;
                 top: 0.7rem;
 
-                background-color: #fff;
+                background-color: $blue;
             }
 
             &::after {
@@ -70,7 +69,7 @@
                 left: 0;
                 top: -0.7rem;
 
-                background-color: #fff;
+                background-color: $blue;
             }
         }
 
@@ -89,7 +88,7 @@
                 a {
                     font-size: 1.6rem;
                     font-weight: 400;
-                    color: #fff;
+                    color: $blue;
                     text-decoration: none;
 
                     transition: opacity 0.2s linear;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,9 +24,7 @@ html, body {
       font-size: calc(8px + 2 * (100vw - 1024px) / 336); } }
 
 .page-header {
-  background-color: #6200EE;
-  -webkit-box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.3); }
+  background-color: #fff; }
   .page-header__wrapper {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -59,7 +57,7 @@ html, body {
           -ms-flex-pack: center;
               justify-content: center;
       text-decoration: none;
-      color: #fff;
+      color: #0C73FE;
       -webkit-transition: opacity 0.2s linear;
       -o-transition: opacity 0.2s linear;
       transition: opacity 0.2s linear; }
@@ -69,7 +67,7 @@ html, body {
         width: 5rem;
         height: 5rem; }
         .page-header__wrapper .page-header__logo svg path {
-          fill: #fff; }
+          fill: #0C73FE; }
       .page-header__wrapper .page-header__logo span {
         font-size: 2.4rem;
         font-weight: 400; }
@@ -78,7 +76,7 @@ html, body {
       position: relative;
       width: 2rem;
       height: 0.2rem;
-      background-color: #fff;
+      background-color: #0C73FE;
       cursor: pointer; }
       .page-header__wrapper .page-header__burger-menu::before {
         content: "";
@@ -87,7 +85,7 @@ html, body {
         height: 0.2rem;
         left: 0;
         top: 0.7rem;
-        background-color: #fff; }
+        background-color: #0C73FE; }
       .page-header__wrapper .page-header__burger-menu::after {
         content: "";
         position: absolute;
@@ -95,7 +93,7 @@ html, body {
         height: 0.2rem;
         left: 0;
         top: -0.7rem;
-        background-color: #fff; }
+        background-color: #0C73FE; }
     .page-header__wrapper .page-header__navigation {
       display: -webkit-box;
       display: -webkit-flex;
@@ -109,7 +107,7 @@ html, body {
         .page-header__wrapper .page-header__navigation .navigation__item a {
           font-size: 1.6rem;
           font-weight: 400;
-          color: #fff;
+          color: #0C73FE;
           text-decoration: none;
           -webkit-transition: opacity 0.2s linear;
           -o-transition: opacity 0.2s linear;
@@ -117,16 +115,50 @@ html, body {
           .page-header__wrapper .page-header__navigation .navigation__item a:hover {
             opacity: 0.8; }
 
+.promo-visual {
+  position: relative;
+  min-height: 50rem;
+  background-image: url(../img/bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .promo-visual .go-next {
+    position: absolute;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    bottom: -2.6rem;
+    left: 50%;
+    background-color: #0C73FE;
+    background-image: url(../icons/arrow-bottom.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    -o-transition: transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+    .promo-visual .go-next:hover {
+      -webkit-transform: translate(-50%, 0.3rem);
+          -ms-transform: translate(-50%, 0.3rem);
+              transform: translate(-50%, 0.3rem); }
+
 .trust {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #f3f3f3; }
+  background-color: #0C73FE; }
   .trust__wrapper {
     width: 95%;
     max-width: 124rem;
     margin: 0 auto; }
     .trust__wrapper h2 {
       margin-bottom: 3rem;
+      color: #fff;
       font-size: 3.4rem;
       text-align: center;
       font-weight: 700; }
@@ -145,7 +177,8 @@ html, body {
               align-items: center; }
       .trust__wrapper .trust__items .trust__item {
         width: 30rem;
-        margin-right: 5rem; }
+        margin-right: 5rem;
+        color: #fff; }
         .trust__wrapper .trust__items .trust__item:last-child {
           margin-right: 0; }
         .trust__wrapper .trust__items .trust__item__icon {
@@ -153,8 +186,8 @@ html, body {
           margin-bottom: 2rem;
           width: 5rem;
           height: 5rem;
-          background-size: contain;
           background-position: center;
+          background-size: contain;
           background-repeat: no-repeat; }
           .trust__wrapper .trust__items .trust__item__icon_back-money {
             background-image: url(../icons/trust/back-money.svg); }
@@ -171,6 +204,14 @@ html, body {
           text-align: center;
           font-size: 1.6rem;
           font-weight: 400; }
+
+.search-form {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  .search-form__wrapper {
+    width: 95%;
+    max-width: 124rem;
+    margin: 0 auto; }
 
 .subscribe {
   padding-top: 5rem;

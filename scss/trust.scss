@@ -2,7 +2,7 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 
-    background-color: $grey;
+    background-color: $blue;
 
     &__wrapper {
         width: 95%;
@@ -12,6 +12,7 @@
         h2 {
             margin-bottom: 3rem;
 
+            color: #fff;
             font-size: 3.4rem;
             text-align: center;
             font-weight: 700;
@@ -26,6 +27,8 @@
                 width: 30rem;
                 margin-right: 5rem;
 
+                color: #fff;
+
                 &:last-child {
                     margin-right: 0;
                 }
@@ -36,8 +39,8 @@
                     width: 5rem;
                     height: 5rem;
 
-                    background-size: contain;
                     background-position: center;
+                    background-size: contain;
                     background-repeat: no-repeat;
 
                     &_back-money {
