@@ -1,10 +1,101 @@
 .search-form {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    background-color: $blue;
 
     &__wrapper {
         width: 95%;
         max-width: 124rem;
         margin: 0 auto;
+
+        h2 {
+            margin-bottom: 3rem;
+
+            color: #fff;
+            text-align: center;
+            font-size: 3.4rem;
+            font-weight: 700;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                height: 6rem;
+                width: 100%;
+                padding-left: 2rem;
+                padding-right: 2rem;
+
+                font-size: 1.6rem;
+                font-family: inherit;
+
+                outline: none;
+                border: none;
+                border-right: 0.2rem solid $blue;
+
+                transition: border-bottom 0.1s linear;
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                &::placeholder {
+                    font-family: inherit;
+                }
+
+                &:focus {
+                    border-bottom: 0.2rem solid rgb(255, 147, 40);
+                }
+            }
+
+            .search-form__from {
+                position: relative;
+                border-radius: 0.5rem 0 0 0.5rem;
+            }
+
+            .search-form__count {
+                margin-right: 1rem;
+
+                border-radius: 0 0.5rem 0.5rem 0;
+            }
+
+            .search-form__btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 6rem;
+                width: 100%;
+                min-width: 25rem;
+
+                color: #fff;
+                font-weight: 700;
+                font-size: 1.8rem;
+
+                background-color: rgb(245, 124, 0);
+                border: none;
+                border-radius: 0.5rem;
+                outline: none;
+                cursor: pointer;
+                transition: background-color 0.2s linear;
+
+                &::after {
+                    content: "";
+                    width: 3.6rem;
+                    height: 3.8rem;
+
+                    background-image: url(../icons/plane.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                &:hover {
+                    background-color: rgb(255, 147, 40);
+                }
+            }
+        }
     }
 }
