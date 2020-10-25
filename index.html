@@ -58,13 +58,13 @@
         </section>
         <section class="search-form">
             <div class="search-form__wrapper">
-                <h2>Найдите подходящий билет уже сейчас</h2>
-                <form method="POST">
-                    <input type="text" class="search-form__from" placeholder="Откуда">
-                    <input type="text" class="search-form__to" placeholder="Куда">
-                    <input type="date" class="search-form__there">
-                    <input type="date" class="search-form__back">
-                    <input type="number" placeholder="Пассажиры" class="search-form__count" min="1" max="8">
+                <h2>Найдите подходящий билет прямо сейчас</h2>
+                <form action="search.html" class="search-form__app">
+                    <input type="text" class="search-form__from" placeholder="Откуда" required>
+                    <input type="text" class="search-form__to" placeholder="Куда" required>
+                    <input type="date" class="search-form__there" required>
+                    <input type="date" class="search-form__back" required>
+                    <input type="number" placeholder="Пассажиры" class="search-form__count" min="1" max="8" required>
                     <button type="submit"  class="search-form__btn">Найти билеты</button>
                 </form>
             </div>
@@ -105,7 +105,7 @@
                 <h2>Подпишитесь на нашу рассылку</h2>
                 <h3>чтобы не пропустить интересные предложения</h3>
                 <form method="POST">
-                    <input type="email" placeholder="Введите ваш email">
+                    <input type="email" placeholder="Введите ваш email" required>
                     <button type="submit">Подписаться</button>
                 </form>
             </div>

@@ -1,0 +1,97 @@
+.register {
+    padding-top: 7rem;
+    padding-bottom: 13.7rem;
+    background-color: #fff;
+    background-image: url(../img/sky-bg.jpg);
+    background-position: 0 -0.5rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    &__wrapper {
+        max-width: 124rem;
+        width: 95%;
+        margin: 0 auto;
+
+        form {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            margin: 0 auto;
+            width: 60%;
+            height: 80rem;
+
+            background-color: #fff;
+            border-radius: 3rem;
+            box-shadow: 0.3rem 0.3rem 1.5rem 1rem rgba(0, 0, 0, 0.1);
+
+            h2 {
+                margin-bottom: 3rem;
+
+                font-size: 3.4rem;
+                text-align: center;
+                color: $blue;
+            }
+
+            .register__form-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                .form-wrapper__input-group {
+                    margin-bottom: 3rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        margin-bottom: 0.5rem;
+
+                        font-weight: 700;
+                        font-size: 1.4rem;
+                        color: rgba(0, 0, 0, 0.7);
+                    }
+
+                    input {
+                        width: 35rem;
+                        height: 4rem;
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        font-family: inherit;
+
+                        outline: none;
+                        border: 0.1rem solid rgba(0, 0, 0, 0.2);
+                        border-radius: 1rem;
+                        transition: border-color 0.2s linear;
+
+                        &:focus {
+                            border-color: $blue;
+                        }
+
+                        &::placeholder {
+                            font-family: inherit;
+                        }
+                    }
+                }
+
+                button {
+                    margin-top: 2rem;
+                    width: 30rem;
+                    height: 4rem;
+
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    color: #fff;
+
+                    outline: none;
+                    border: none;
+                    border-radius: 1rem;
+                    cursor: pointer;
+                    background-color: $blue;
+                    box-shadow: 0.2rem 0.2rem #0357c5;
+                }
+            }
+        }
+    }
+}

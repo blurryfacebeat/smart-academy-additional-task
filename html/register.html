@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightPool</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main class="register-page">
+        <section class="register">
+            <div class="register__wrapper">
+                <form method="POST">
+                    <h2>Регистрация</h2>
+                    <div class="register__form-wrapper">
+                        <div class="form-wrapper__input-group">
+                            <label for="name">Имя</label>
+                            <input id="name" type="text" required>
+                        </div>
+                        <div class="form-wrapper__input-group">
+                            <label for="surname">Фамилия</label>
+                            <input id="surname" type="text" required>
+                        </div>
+                        <div class="form-wrapper__input-group">
+                            <label for="doc-num">Номер документа</label>
+                            <input id="doc-num" type="text" required>
+                        </div>
+                        <div class="form-wrapper__input-group">
+                            <label for="reg-phone">Телефон</label>
+                            <input class="reg-phone" data-mask="+7 (999) 999-99-99" id="reg-phone" type="text" required>
+                        </div>
+                        <div class="form-wrapper__input-group">
+                            <label for="pass">Пароль</label>
+                            <input id="pass" type="password" required>
+                        </div>
+                        <div class="form-wrapper__input-group">
+                            <label for="pass-repeat">Повторите пароль</label>
+                            <input id="pass-repeat" type="password" required>
+                        </div>
+                        <button type="submit">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -34,7 +34,7 @@ gulp.task('js', () => {
 });
 
 gulp.task('html', () => {
-    return gulp.src('html/index.html')
+    return gulp.src('html/*.html')
         .pipe(gulp.dest('./'))
         .pipe(brSync.reload({ stream: true }));
 });

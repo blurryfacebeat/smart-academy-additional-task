@@ -10,7 +10,7 @@
         margin: 0 auto;
 
         h2 {
-            margin-bottom: 3rem;
+            margin-bottom: 5rem;
 
             color: #fff;
             text-align: center;
@@ -22,6 +22,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            span {
+                display: block;
+                font-size: 1rem;
+                color: #fff;
+            }
 
             input {
                 height: 6rem;
@@ -54,6 +60,10 @@
             .search-form__from {
                 position: relative;
                 border-radius: 0.5rem 0 0 0.5rem;
+
+                &:focus {
+                    border-left: 0.2rem solid rgb(255, 147, 40);
+                }
             }
 
             .search-form__count {
