@@ -1,0 +1,263 @@
+.take-seat {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7rem;
+        padding-bottom: 10rem;
+        max-width: 124rem;
+        width: 95%;
+        margin: 0 auto;
+
+        box-shadow: 0 0 10rem 0.1rem rgba(0, 0, 0, 0.3);
+
+        h2 {
+            margin-bottom: 5rem;
+
+            font-size: 3.4rem;
+            text-align: center;
+            color: $blue;
+        }
+
+        .seats__wrapper {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+
+            .seats_left {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                margin-right: 10rem;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 2rem;
+                    height: 2rem;
+                    top: 52%;
+                    left: -3rem;
+
+                    background-image: url(../icons/exit.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    transform: rotate(180deg);
+                }
+
+                .seats__group {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 1rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &:nth-child(7) {
+                        margin-bottom: 3rem;
+                    }
+
+                    .seats__num {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 1rem;
+                        width: 3rem;
+                        height: 3rem;
+
+                        color: rgba(0, 0, 0, 0.7);
+                        font-size: 1.4rem;
+                        text-align: center;
+                    }
+
+                    .seats__item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 3rem;
+                        height: 3rem;
+                        margin-right: 0.5rem;
+
+                        text-align: center;
+                        font-size: 1.6rem;
+
+                        cursor: pointer;
+                        border: 0.1rem solid $blue;
+                        border-radius: 0.5rem;
+                        transition: background-color 0.2s linear,
+                        color 0.2s linear,
+                        border 0.2s linear;
+
+                        
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &:hover {
+                            color: #fff;
+                            background-color: rgb(153, 255, 128);
+                            border: none;
+                        }
+
+                        &_busy {
+                            color: #fff;
+
+                            background-color: $blue;
+                            border: none;
+                            cursor: default;
+
+                            &:hover {
+                                background-color: $blue;
+                            }
+                        }
+
+                        &_take {
+                            color: #fff;
+
+                            background-color: rgb(153, 255, 128);
+                            border: none;
+                        }
+
+                        &_block {
+                            color: #fff;
+
+                            border: none;
+                            cursor: default;
+                            background-color: rgb(255, 117, 117);
+
+                            &:hover {
+                                background-color: rgb(255, 117, 117);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .seats_right {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 2rem;
+                    height: 2rem;
+                    top: 52%;
+                    right: -3rem;
+
+                    background-image: url(../icons/exit.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+
+                .seats__toilet {
+                    position: absolute;
+                    top: 54rem;
+                    width: 6.5rem;
+                    height: 3rem;
+
+                    background-color: $blue;
+                    background-image: url(../icons/toilet.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 2.5rem 2.5rem;
+
+                    border-radius: 0.5rem;
+                }
+
+                .seats__group {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 1rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &:nth-child(8) {
+                        margin-bottom: 3rem;
+                    }
+
+                    .seats__item__coffee {
+                        width: 6.5rem;
+                        height: 3rem;
+
+                        background-color: $blue;
+                        background-image: url(../icons/coffee-cup.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 2rem 2rem;
+
+                        border-radius: 0.5rem;
+                    }
+
+                    .seats__item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 3rem;
+                        height: 3rem;
+                        margin-right: 0.5rem;
+
+                        text-align: center;
+                        font-size: 1.6rem;
+
+                        cursor: pointer;
+                        border: 0.1rem solid $blue;
+                        border-radius: 0.5rem;
+                        transition: background-color 0.2s linear,
+                        color 0.2s linear,
+                        border 0.2s linear;
+                        
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &:hover {
+                            color: #fff;
+                            background-color: rgb(153, 255, 128);
+                            border: none;
+                        }
+
+                        &_busy {
+                            color: #fff;
+
+                            background-color: $blue;
+                            border: none;
+                            cursor: default;
+
+                            &:hover {
+                                background-color: $blue;
+                            }
+                        }
+
+                        &_take {
+                            color: #fff;
+
+                            background-color: rgb(153, 255, 128);
+                            border: none;
+                        }
+
+                        &_block {
+                            color: #fff;
+
+                            border: none;
+                            cursor: default;
+                            background-color: rgb(255, 117, 117);
+
+                            &:hover {
+                                background-color: rgb(255, 117, 117);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

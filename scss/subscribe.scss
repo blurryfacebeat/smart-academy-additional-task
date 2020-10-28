@@ -44,7 +44,12 @@
 
                 border: none;
                 outline: none;
-                border-radius: 0.5rem 0 0 0.5rem;
+                border-radius: 3rem 0 0 3rem;
+                transition: border 0.2s linear;
+
+                &:focus {
+                    border: 0.1rem solid rgb(255, 147, 40);;
+                }
 
                 &::placeholder {
                     font-family: 'Montserrat', sans-serif;
@@ -60,14 +65,16 @@
                 font-size: 1.6rem;
 
                 border: none;
-                border-radius: 0 0.5rem 0.5rem 0;
+                border-radius: 0 3rem 3rem 0;
                 background-color: rgb(245, 124, 0);
                 cursor: pointer;
                 outline: none;
-                transition: background-color 0.2s linear;
+                transition: background-color 0.2s linear,
+                box-shadow 0.2s linear;
 
                 &:hover {
                     background-color: rgb(255, 147, 40);
+                    box-shadow: 0.3rem 0.3rem rgb(212, 107, 2);
                 }
             }
         }

@@ -58,11 +58,52 @@ try {
 
 
 try {
+  var setProbability = function setProbability(el) {
+    var passengers = +el.getAttribute('data-passengers');
+    var probability = '';
+
+    if (passengers >= 30) {
+      probability = '100%';
+    } else if (passengers >= 25) {
+      probability = '75%';
+    } else if (passengers >= 15) {
+      probability = '50%';
+    } else if (passengers >= 10) {
+      probability = '25%';
+    } else {
+      probability = 'Мало пассажиров для вылета';
+    }
+
+    el.innerHTML = probability;
+  };
+
   var $info_results = document.querySelectorAll('.info-result');
+  var $fligth_probability = document.querySelector('.fligth-probability');
   var fligthsResult = JSON.parse(localStorage.getItem('searchResult'));
   $info_results[0].innerHTML = fligthsResult.from;
   $info_results[1].innerHTML = fligthsResult.to;
   $info_results[2].innerHTML = fligthsResult.there;
   $info_results[3].innerHTML = fligthsResult.back;
   $info_results[4].innerHTML = fligthsResult.count;
+  setProbability($fligth_probability);
+} catch (error) {} // Работаю со страницей выбора сидения
+
+
+try {
+  var takeClear = function takeClear() {
+    $seats.forEach(function (el) {
+      el.classList.remove('seats__item_take');
+    });
+  };
+
+  var $seats_wrapper = document.querySelector('.seats__wrapper');
+  var $seats = document.querySelectorAll('.seats__item');
+  $seats_wrapper.addEventListener('click', function (e) {
+    var target = e.target;
+
+    if (target.classList.contains('seats__item') && !target.classList.contains('seats__item_block') && !target.classList.contains('seats__item_busy')) {
+      takeClear();
+      target.classList.toggle('seats__item_take');
+    }
+  });
 } catch (error) {}

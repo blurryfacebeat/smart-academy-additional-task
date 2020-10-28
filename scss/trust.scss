@@ -10,7 +10,7 @@
         margin: 0 auto;
 
         h2 {
-            margin-bottom: 3rem;
+            margin-bottom: 5rem;
 
             color: #fff;
             font-size: 3.4rem;
@@ -21,13 +21,17 @@
         .trust__items {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: stretch;
 
             .trust__item {
+                display: flex;
+                flex-direction: column;
                 width: 30rem;
                 margin-right: 5rem;
 
                 color: #fff;
+
+                // background-color: #fff;
 
                 &:last-child {
                     margin-right: 0;

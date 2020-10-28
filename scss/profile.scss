@@ -1,0 +1,58 @@
+.profile {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: $blue;
+
+    &__wrapper {
+        max-width: 124rem;
+        width: 95%;
+        margin: 0 auto;
+
+        .profile__user-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5rem;
+
+            .profile__user-name {
+                font-size: 1.6rem;
+                color: #fff;
+            }
+
+            .profile__user-fligths-count {
+                font-size: 1.6rem;
+                color: #fff;
+            }
+
+            button {
+                height: 5rem;
+                width: 15rem;
+
+                color: #fff;
+                font-weight: 700;
+                font-size: 1.6rem;
+
+                border: none;
+                border-radius: 0.5rem;
+                background-color: rgb(245, 124, 0);
+                cursor: pointer;
+                outline: none;
+                transition: background-color 0.2s linear,
+                box-shadow 0.2s linear;
+
+                &:hover {
+                    background-color: rgb(255, 147, 40);
+                    box-shadow: 0.3rem 0.3rem rgb(212, 107, 2);
+                }
+            }
+        }
+
+        .profile__fligths {
+            h2 {
+                color: #fff;
+                font-size: 2.4rem;
+                text-align: center;
+            }
+        }
+    }
+}

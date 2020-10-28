@@ -44,12 +44,62 @@
             margin-top: 7rem;
 
             background-color: #fff;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 2rem 0.2rem rgba(0, 0, 0, 0.3);
 
             h2 {
+                margin-bottom: 5rem;
+
                 font-size: 3.4rem;
                 font-weight: 700;
                 text-align: center;
                 color: $blue;
+            }
+
+            .search__fligths__wrapper {
+                padding-left: 2rem;
+                padding-right: 2rem;
+                display: flex;
+                align-items: center;
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    tr {
+                        border-bottom: 0.1rem solid $blue;
+
+                        td {
+                            padding-top: 1rem;
+                            padding-bottom: 1rem;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                            font-size: 1.6rem;
+                            border-right: 0.1rem solid $blue;
+
+                            &:last-child {
+                                border-right: none;
+                            }
+
+                            a {
+                                color: #000;
+                                font-size: 1.6rem;
+        
+                                transition: color 0.2s linear;
+        
+                                &:hover {
+                                    color: rgb(255, 147, 40);
+                                }
+                            }
+                        }
+                    }
+
+                    tr:first-child {
+                        td {
+                            color: rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
             }
         }
     }
