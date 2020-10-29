@@ -1,6 +1,6 @@
 .promotions {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 
     &__wrapper {
         margin: 0 auto;
@@ -8,7 +8,7 @@
         max-width: 124rem;
 
         h2 {
-            margin-bottom: 3rem;
+            margin-bottom: 5rem;
 
             color: $blue;
             text-align: center;
@@ -19,9 +19,13 @@
         .promotions__items {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: stretch;
 
             .promotions__item {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
                 margin-right: 5rem;
                 width: 35rem;
                 display: flex;
@@ -30,19 +34,42 @@
 
                 text-decoration: none;
 
+                box-shadow: 0 0 1rem 0.3rem rgba(0, 0, 0, 0.1);
+                border-radius: 1rem;
+                transition: transform 0.2s linear;
+
                 &:last-child {
                     margin-right: 0;
                 }
 
-                img {
-                    margin-bottom: 2rem;
+                &:hover {
+                    transform: translateY(-0.5rem);
+                }
 
-                    width: 30rem;
-                    height: 50rem;
+                .icon {
+                    width: 10rem;
+                    height: 10rem;
+                    margin-bottom: 3rem;
+
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+
+                    &_cashback {
+                        background-image: url(../icons/return-of-investment.svg);
+                    }
+
+                    &_accumulation {
+                        background-image: url(../icons/presentation.svg);
+                    }
+
+                    &_discount {
+                        background-image: url(../icons/credit-card.svg);
+                    }
                 }
 
                 h2 {
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
 
                     text-align: center;
                     font-size: 2.4rem;
@@ -51,7 +78,8 @@
                 .decoration-line {
                     width: 70%;
                     height: 0.2rem;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
+                    margin-top: auto;
 
                     background-color: $blue;
                 }

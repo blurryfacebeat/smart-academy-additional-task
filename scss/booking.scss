@@ -1,0 +1,12 @@
+.booking {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    background-color: $blue;
+
+    &__wrapper {
+        max-width: 124rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+}

@@ -1,4 +1,4 @@
-// Получаю данные из формы и обрабатываю их в JSON
+// работаю с главной страницей
 try {
     const $search_form = document.querySelector('.search-form__app');
     const $search_inputs = document.querySelectorAll('.search-form__app input');
@@ -19,6 +19,48 @@ try {
 
         delete localStorage.searchResult;
         localStorage.setItem('searchResult', JSON.stringify(searchResult));
+    });
+
+    const $range = document.querySelector('input[type="range"]');
+    const $accumulation_counter = document.querySelector('.accumulation-counter');
+    const $discount_percent = document.querySelector('.discount-percent');
+    const $booking_percent = document.querySelector('.booking-percent');
+    const $line_discount = document.querySelector('.app__line_discount');
+    const $line_booking = document.querySelector('.app__line_booking');
+
+    $range.addEventListener('input', e => {
+        $accumulation_counter.innerHTML = $range.value;
+
+        if ($range.value < 10) {
+            $discount_percent.innerHTML = '0%';
+            $booking_percent.innerHTML = '0%';
+            $line_discount.style.width = '3rem';
+            $line_booking.style.width = '3rem';
+        }
+        if ($range.value >= 10) {
+            $discount_percent.innerHTML = '3%';
+            $booking_percent.innerHTML = '25%';
+            $line_discount.style.width = '7rem';
+            $line_booking.style.width = '7rem';
+        } 
+        if ($range.value >= 15) {
+            $discount_percent.innerHTML = '5%';
+            $booking_percent.innerHTML = '50%';
+            $line_discount.style.width = '10rem';
+            $line_booking.style.width = '10rem';
+        }
+        if ($range.value >= 25) {
+            $discount_percent.innerHTML = '10%';
+            $booking_percent.innerHTML = '75%';
+            $line_discount.style.width = '15rem';
+            $line_booking.style.width = '15rem';
+        }
+        if ($range.value >= 30) {
+            $discount_percent.innerHTML = '15%';
+            $booking_percent.innerHTML = '100%';
+            $line_discount.style.width = '20rem';
+            $line_booking.style.width = '20rem';
+        }
     });
 } catch (error) {
     

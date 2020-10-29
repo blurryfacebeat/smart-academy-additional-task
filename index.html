@@ -27,11 +27,34 @@
     </header>
     <main class="page-main">
         <section class="promo-visual">
-            <a href="#trust" class="go-next"></a>
+            <a href="#accumulation" class="go-next"></a>
         </section>
-        <section class="accumulation">
+        <section class="accumulation" id="accumulation">
             <div class="accumulation__wrapper">
-
+                <h2>Принцип накопления</h2>
+                <p>В чем суть накопления? Мы работаем на выгодных для наших клиентов условиях. Чем больше людей забронировали билеты, тем больше вероятность вылета самолета, и тем больше скидка на билет! Проверьте сами, с помощью интерактивной формы ниже!</p>
+                <div class="accumulation__app">
+                    <div class="lines__wrapper">
+                        <div class="app__discount-wrapper">
+                            <span>Скидка: <span class="discount-percent">0%</span></span>
+                            <div class="app__line app__line_discount"></div>
+                        </div>
+                        <div class="app__booking-wrapper">
+                            <span>Вероятность вылета: <span class="booking-percent">0%</span></span>
+                            <div class="app__line app__line_booking"></div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="input-group">
+                            <label for="">Условная дата</label>
+                            <input type="date">
+                        </div>
+                        <div class="input-group">
+                            <label for="accumulation__app__count">Количество бронирований: <span class="accumulation-counter">1</span></label>
+                            <input id="accumulation__app__count" type="range" min="1" max="60" step="1" value="1">
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="trust" id="trust">
@@ -74,28 +97,22 @@
                 <h2>Акции</h2>
                 <div class="promotions__items">
                     <a href="#" class="promotions__item">
-                        <img src="img/plains/1.jpg" alt="Картинка1">
-                        <h2>Горячий тур в тагил</h2>
+                        <div class="icon icon_cashback"></div>
+                        <h2>Кэшбек за полеты</h2>
                         <div class="decoration-line"></div>
-                        <p>Спешите! Тур в одну из самых красивых стран мира всего за 49000Р, самая низкая цена за все время!</p>
+                        <p>Кэшбек за покупки билетов! Покупайте, летайте и получайте часть денег обратно.</p>
                     </a>
                     <a href="#" class="promotions__item">
-                        <img src="img/plains/2.jpg" alt="Картинка1">
-                        <h2>Горячий тур в корею</h2>
+                        <div class="icon icon_accumulation"></div>
+                        <h2>Накопительная система</h2>
                         <div class="decoration-line"></div>
-                        <p>Спешите! Тур в одну из самых красивых стран мира всего за 49000Р, самая низкая цена за все время!</p>
+                        <p>Чем чаще и больше вы покупаете, тем больше скидка на следующую покупку!</p>
                     </a>
                     <a href="#" class="promotions__item">
-                        <img src="img/plains/3.jpg" alt="Картинка1">
-                        <h2>Горячий тур в китай</h2>
+                        <div class="icon icon_discount"></div>
+                        <h2>Выгодная оплата картой</h2>
                         <div class="decoration-line"></div>
-                        <p>Спешите! Тур в одну из самых красивых стран мира всего за 49000Р, самая низкая цена за все время!</p>
-                    </a>
-                    <a href="#" class="promotions__item">
-                        <img src="img/plains/4.jpeg" alt="Картинка1">
-                        <h2>Горячий тур в ОАЭ</h2>
-                        <div class="decoration-line"></div>
-                        <p>Спешите! Тур в одну из самых красивых стран мира всего за 49000Р, самая низкая цена за все время!</p>
+                        <p>Оплачивайте билеты бесконтактно и получайте дополнительную скидку в 3%!</p>
                     </a>
                 </div>
             </div>
